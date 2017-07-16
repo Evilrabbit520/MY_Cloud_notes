@@ -1,0 +1,40 @@
+﻿<Window x:Name="Window" x:Class="MY云笔记.MYDH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MY云笔记"
+        mc:Ignorable="d"
+        Title="MYDH" Height="800" Width="1200" ResizeMode="NoResize" ShowInTaskbar="False" IsTabStop="False" WindowStyle="None" MouseMove="MYDH_MouseDown" Loaded="Window_Loaded" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="957"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="668"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="×" Grid.Column="1" Margin="944,0,-21,0" VerticalAlignment="Top" Height="30" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" RenderTransformOrigin="4.314,-0.857" Click="button_Click" Foreground="Black"/>
+        <Button x:Name="button1" Content="-" Grid.Column="1" HorizontalAlignment="Left" Margin="914,0,0,0" VerticalAlignment="Top" Width="30" Height="30" RenderTransformOrigin="1.533,1.533" FontSize="22" Background="{x:Null}" Foreground="Black" BorderBrush="{x:Null}" Click="button1_Click"/>
+        <TextBox x:Name="LoginMsg" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="170,184,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="圆形匿名头像.png"/>
+        <Button x:Name="MyInfo" Content="UserName" HorizontalAlignment="Left" Margin="55,17,0,0" VerticalAlignment="Top" Width="75" Height="29" BorderBrush="{x:Null}" Foreground="Black" Background="{x:Null}" IsCancel="True" Click="MyInfo_Click"/>
+        <Image Grid.Column="1" MouseLeftButtonDown="Image_MouseLeftButtonDown" Source="image\+.png" HorizontalAlignment="Left" Height="25" Width="25" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="4" Grid.Row="1" VerticalAlignment="Top" Width="1200" Source="image/lineb.png" Stretch="Fill" Margin="0,0,-21,0"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="460" Margin="609,266,0,-57" Grid.Row="1" VerticalAlignment="Top" Width="2" Source="image/linea.png" Stretch="Fill"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="268" Margin="697,0,0,0" VerticalAlignment="Top" Width="2" Source="image/linea.png" Stretch="Fill" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="800" Margin="0,0,0,-50" VerticalAlignment="Top" Width="4" Source="image/lineb.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="2" Grid.Row="1" VerticalAlignment="Top" Width="979" Source="image/linea.png" Stretch="Fill" Margin="0,266,-21,0" Grid.Column="1"/>
+        <Label Content="天气" Grid.Column="1" HorizontalAlignment="Left" Margin="193,58,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
