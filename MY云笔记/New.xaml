@@ -8,6 +8,11 @@
         Title="New" Height="500" Width="800" ResizeMode="NoResize" Icon="MY云笔记.ico" Background="White" Foreground="Black">
     <Grid>
         <Image Source="image\Newy.jpg" Height="471" VerticalAlignment="Top" Stretch="Fill"/>
+        <Image Margin="75,95,649,306" Source="image\W.png" Stretch="Fill"/>
+        <Image Margin="224,95,500,306" Source="image\E.png" Stretch="Fill"/>
+        <Image Margin="370,95,354,306" Source="image\P.png" Stretch="Fill"/>
+        <Image Margin="658,95,66,306" Source="image\T.png" Stretch="Fill"/>
+        <Image Margin="513,95,211,306" Source="image\XIM.png" Stretch="Fill"/>
 
     </Grid>
 </Window>
