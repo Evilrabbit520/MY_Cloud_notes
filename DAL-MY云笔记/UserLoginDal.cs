@@ -34,12 +34,12 @@ namespace DAL_MY云笔记
                 {
                     con.Close();
                     user.LoginFlag = true;
-                    user.LoginMsg="测试登录成功" ;
+                    user.LoginMsg="开发账户登录成功" ;
                     
                 }
                 else
                 {
-                    user.LoginMsg= "用户名或密码错误";
+                    user.LoginMsg= "请检查您的用户名或者密码";
                 }
             }
             return user;
