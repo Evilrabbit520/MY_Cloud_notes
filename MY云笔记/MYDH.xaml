@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MY云笔记"
         mc:Ignorable="d"
-        Title="MYDH" Height="800" Width="1200" ResizeMode="NoResize" ShowInTaskbar="False" IsTabStop="False" WindowStyle="None" MouseMove="MYDH_MouseDown" Loaded="Window_Loaded" >
+        Title="MYDH" Height="800" Width="1200" ResizeMode="NoResize" IsTabStop="False" WindowStyle="None" MouseMove="MYDH_MouseDown" Loaded="Window_Loaded" Icon="MY云笔记.ico" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220"/>
