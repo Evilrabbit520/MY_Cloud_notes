@@ -25,5 +25,30 @@ namespace MY云笔记
         {
             InitializeComponent();
         }
+        private void Image_MouseLeftButtonDown_W(object sender, MouseButtonEventArgs e)
+        {
+           Word DH = new Word();
+           DH.Show();
+        }
+        private void Image_MouseLeftButtonDown_E(object sender, MouseButtonEventArgs e)
+        {
+            Word DH = new Word();
+            DH.Show();
+        }
+        private void Image_MouseLeftButtonDown_P(object sender, MouseButtonEventArgs e)
+        {
+            Word DH = new Word();
+            DH.Show();
+        }
+        private void Image_MouseLeftButtonDown_XM(object sender, MouseButtonEventArgs e)
+        {
+            Word DH = new Word();
+            DH.Show();
+        }
+        private void Image_MouseLeftButtonDown_T(object sender, MouseButtonEventArgs e)
+        {
+            Word DH = new Word();
+            DH.Show();
+        }
     }
 }

@@ -22,15 +22,18 @@ namespace MY云笔记
     /// </summary>
     public partial class MYDH : Window
     {
+       
         public MYDH(UserInfo user)
         {
             InitializeComponent();
             InitMYDH(user);
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            Fweather.Source = new Uri("https://www.baidu.com/");    //天气模块Frame的URL
+            Fad.Source = new Uri("https://www.baidu.com/");    //文字列表广告模块Frame的URL
         }
         private void InitMYDH(UserInfo user)
         {
-            LoginMsg.Text=user.LoginMsg;
+           
         }
 
         private void button_Click(object sender, RoutedEventArgs e)     //关闭登录窗口
