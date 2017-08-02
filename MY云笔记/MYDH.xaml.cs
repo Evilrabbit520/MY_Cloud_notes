@@ -29,7 +29,7 @@ namespace MY云笔记
             InitMYDH(user);
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
             Fweather.Source = new Uri("https://www.baidu.com/");    //天气模块Frame的URL
-            Fad.Source = new Uri("https://www.baidu.com/");    //文字列表广告模块Frame的URL
+            Fad.Source = new Uri("file:///C:/Users/evilr/Desktop/cs.html");    //广告模块Frame的URL
         }
         private void InitMYDH(UserInfo user)
         {

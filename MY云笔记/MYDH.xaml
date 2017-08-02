@@ -35,7 +35,33 @@
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="800" Margin="0,0,0,-50" VerticalAlignment="Top" Width="4" Source="image/lineb.png" Stretch="Fill" Grid.RowSpan="2"/>
         <Image HorizontalAlignment="Left" Height="2" Grid.Row="1" VerticalAlignment="Top" Width="985" Source="image/linea.png" Stretch="Fill" Margin="4,444,-31,0" Grid.Column="1"/>
         <!-- HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 使Frame自适应父容器的大小。 -->
-        <Frame x:Name="Fweather" Content="天气控件" Margin="4,4,261,225" Grid.Column="1" Grid.Row="1" />
-        <Frame x:Name="Fad" Content="广告列表" Grid.Column="1" HorizontalAlignment="Left" Height="440" Margin="697,4,-21,0" Grid.Row="1" VerticalAlignment="Top" Width="282" RenderTransformOrigin="0.497,0.683"/>
+        <Frame x:Name="Fweather" Content="天气模块" Margin="4,4,261,225" Grid.Column="1" Grid.Row="1" />
+        <Frame x:Name="Fad" Content="广告模块" Grid.Column="1" HorizontalAlignment="Left" Height="440" Margin="697,4,-21,0" Grid.Row="1" VerticalAlignment="Top" Width="282" RenderTransformOrigin="0.497,0.683"/>
+        <TabControl HorizontalAlignment="Left" Height="715" Margin="0,4,0,-50" Grid.Row="1" VerticalAlignment="Top" Width="221">
+            <TabItem Header="文档">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="174*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="笔记">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="174*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="账号">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="174*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
