@@ -32,7 +32,7 @@ namespace MY云笔记
         }
         private void Image_MouseLeftButtonDown_E(object sender, MouseButtonEventArgs e)
         {
-            Word DH = new Word();
+            Excel DH = new Excel();
             DH.Show();
         }
         private void Image_MouseLeftButtonDown_P(object sender, MouseButtonEventArgs e)
