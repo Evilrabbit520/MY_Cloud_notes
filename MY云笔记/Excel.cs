@@ -15,6 +15,7 @@ namespace MY云笔记
         public Excel()
         {
             InitializeComponent();
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-CN");     //此Excel页面的汉化语句引用Dubug文件夹下的zh-CN.   ——王嘉宁
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
