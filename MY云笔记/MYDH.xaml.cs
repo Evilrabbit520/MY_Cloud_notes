@@ -91,10 +91,5 @@ namespace MY云笔记
             New DH = new New();
             DH.Show();
         }
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)  //活动超链接
-        {
-            Hyperlink link = sender as Hyperlink;
-            Process.Start(new ProcessStartInfo(link.NavigateUri.AbsoluteUri));
-        }
     }
 }
