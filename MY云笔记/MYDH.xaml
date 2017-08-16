@@ -8,60 +8,39 @@
         Title="MYDH" Height="800" Width="1200" ResizeMode="NoResize" IsTabStop="False" WindowStyle="None" MouseMove="MYDH_MouseDown" Loaded="Window_Loaded" Icon="MY云笔记.ico" >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="957"/>
+            <ColumnDefinition Width="184"/>
+            <ColumnDefinition Width="1016"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="668"/>
+            <RowDefinition Height="57"/>
+            <RowDefinition Height="743"/>
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="×" Grid.Column="1" Margin="944,0,-21,0" VerticalAlignment="Top" Height="30" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" RenderTransformOrigin="4.314,-0.857" Click="button_Click" Foreground="Black"/>
+        <Button x:Name="button" Content="×" Grid.Column="1" Margin="944,0,0,0" VerticalAlignment="Top" Height="30" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="20" RenderTransformOrigin="4.314,-0.857" Click="button_Click" Foreground="Black"/>
         <Button x:Name="button1" Content="-" Grid.Column="1" HorizontalAlignment="Left" Margin="914,0,0,0" VerticalAlignment="Top" Width="30" Height="30" RenderTransformOrigin="1.533,1.533" FontSize="22" Background="{x:Null}" Foreground="Black" BorderBrush="{x:Null}" Click="button1_Click"/>
-        <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="圆形匿名头像.png"/>
-        <Button x:Name="MyInfo" Content="UserName" HorizontalAlignment="Left" Margin="55,17,0,0" VerticalAlignment="Top" Width="75" Height="29" BorderBrush="{x:Null}" Foreground="Black" Background="{x:Null}" IsCancel="True" Click="MyInfo_Click"/>
-        <Image Grid.Column="1" MouseLeftButtonDown="Image_MouseLeftButtonDown" Source="image\+.png" HorizontalAlignment="Left" Height="25" Width="25" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="4" Grid.Row="1" VerticalAlignment="Top" Width="1200" Source="image/lineb.png" Stretch="Fill" Margin="0,0,-21,0"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="275" Margin="609,444,0,-50" Grid.Row="1" VerticalAlignment="Top" Width="2" Source="image/linea.png" Stretch="Fill"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="446" Margin="697,0,0,0" VerticalAlignment="Top" Width="2" Source="image/linea.png" Stretch="Fill" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="800" Margin="0,0,0,-50" VerticalAlignment="Top" Width="4" Source="image/lineb.png" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="2" Grid.Row="1" VerticalAlignment="Top" Width="985" Source="image/linea.png" Stretch="Fill" Margin="4,444,-31,0" Grid.Column="1"/>
-        <!-- HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 使Frame自适应父容器的大小。 -->
-        <Frame x:Name="Fweather" Content="天气模块" Margin="4,4,261,225" Grid.Column="1" Grid.Row="1" />
-        <Frame x:Name="Fad" Content="广告模块" Grid.Column="1" HorizontalAlignment="Left" Height="440" Margin="697,4,-21,0" Grid.Row="1" VerticalAlignment="Top" Width="282" RenderTransformOrigin="0.497,0.683"/>
-        <TabControl HorizontalAlignment="Left" Height="715" Margin="0,4,0,-50" Grid.Row="1" VerticalAlignment="Top" Width="221">
-            <TabItem Header="文档">
-                <Grid Background="White">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40*"/>
-                        <ColumnDefinition Width="174*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-            <TabItem Header="笔记">
-                <Grid Background="White">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40*"/>
-                        <ColumnDefinition Width="174*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-            <TabItem Header="账号">
-                <Grid Background="White">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40*"/>
-                        <ColumnDefinition Width="174*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-        </TabControl>
+        <Image Grid.Column="1" MouseLeftButtonDown="Image_MouseLeftButtonDown" Source="image\+.png" HorizontalAlignment="Left" Height="25" Width="25" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="372" Margin="688,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="282">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="24*"/>
+                <RowDefinition Height="109*" />
+            </Grid.RowDefinitions>
+            <Button Content="任务中心" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="94" Height="48" FontSize="18" BorderBrush="#FF95CFFF" Background="#FF959994" Foreground="#FFBCC0D1"/>
+            <Button Content="我的资产" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="94" Height="48" Margin="94,0,0,0" FontSize="18" BorderBrush="#FF95CFFF" Background="#FF959994" Foreground="#FFBCC0D1"/>
+            <Button Content="我的账户" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="94" Height="48" Margin="188,0,0,0" BorderBrush="#FF95CFFF" Background="#FF959994" Foreground="#FFBCC0D1" FontSize="18"/>
+            <Button x:Name="MyInfo" Content="UserName" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Width="104" Height="36" BorderBrush="{x:Null}" Foreground="Black" Background="{x:Null}" IsCancel="True" Click="MyInfo_Click" FontSize="16"/>
+            <Image HorizontalAlignment="Left" Height="55" Margin="10,10,0,0" VerticalAlignment="Top" Width="55" Source="圆形匿名头像.png"/>
+            <Button Content="去签到" HorizontalAlignment="Left" Margin="188,20,0,0" VerticalAlignment="Top" Width="75" Height="45" FontSize="20" Foreground="#FFECECEC" BorderBrush="#FF34E400" Background="#FF34E400"/>
+            <!--活动超链接-->
+            <Canvas Grid.Row="2" Background="#FFE4E4E4"/>
+            <!--END-->
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="372" Margin="39,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="612">
+            <Frame Name="Fweather"/>
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="277" Margin="39,456,0,0" Grid.Row="1" VerticalAlignment="Top" Width="612">
+            <Frame Name="Fad"/>
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="257" Margin="688,456,0,0" Grid.Row="1" VerticalAlignment="Top" Width="282"/>
+        <!--..............................................................................................................................................................................................................................................................................................-->
     </Grid>
 </Window>

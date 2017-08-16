@@ -70,6 +70,9 @@
             DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Excel));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandGalleryItem spreadsheetCommandGalleryItem13 = new DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandGalleryItem();
@@ -1867,7 +1870,7 @@
             this.barButtonItem1,
             this.barButtonItem2});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 339;
+            this.ribbonControl1.MaxItemId = 343;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.chartToolsRibbonPageCategory1,
@@ -2012,9 +2015,16 @@
             // 
             // spreadsheetCommandBarButtonItem10
             // 
+            this.spreadsheetCommandBarButtonItem10.Caption = "加密文档";
             this.spreadsheetCommandBarButtonItem10.CommandName = "FileEncrypt";
             this.spreadsheetCommandBarButtonItem10.Id = 10;
             this.spreadsheetCommandBarButtonItem10.Name = "spreadsheetCommandBarButtonItem10";
+            toolTipTitleItem10.Text = "加密文档";
+            toolTipItem10.LeftIndent = 6;
+            toolTipItem10.Text = "对当前文档进行加密。";
+            superToolTip10.Items.Add(toolTipTitleItem10);
+            superToolTip10.Items.Add(toolTipItem10);
+            this.spreadsheetCommandBarButtonItem10.SuperTip = superToolTip10;
             // 
             // spreadsheetCommandBarButtonItem11
             // 
@@ -5070,12 +5080,14 @@
             // 
             this.barButtonItem1.Caption = "barButtonItem1";
             this.barButtonItem1.Id = 332;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "barButtonItem2";
             this.barButtonItem2.Id = 333;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             // 
             // chartToolsRibbonPageCategory1
@@ -7928,6 +7940,7 @@
             this.Controls.Add(this.spreadsheetControl1);
             this.Controls.Add(this.mailMergeParametersDockPanel1);
             this.Controls.Add(this.ribbonControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Excel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Excel";
