@@ -19,7 +19,6 @@ namespace DAL_MY云笔记
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "user id=Digital Technology;Data Source=mssql.ybj.pw;database=Digital Technology;password=DigitalTechnology2017";
             con.Open();
-
             if (user.UserName == "" || user.PassWord == "")
             {
                 user.LoginMsg= "请输入账号或密码";
