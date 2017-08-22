@@ -17,7 +17,7 @@ namespace DAL_MY云笔记
 
             //连接数据库比对，后面写三层架构的时候把数据库的操作写进去
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "user id=Digital Technology;Data Source=mssql.ybj.pw;database=Digital Technology;password=DigitalTechnology2017";
+            con.ConnectionString = "user id=Digital Technology;Data Source=mssql.ybj.pw,10120;database=Digital Technology;password=DigitalTechnology2017";
             con.Open();
             if (user.UserName == "" || user.PassWord == "")
             {
@@ -33,8 +33,7 @@ namespace DAL_MY云笔记
                 {
                     con.Close();
                     user.LoginFlag = true;
-                    user.LoginMsg="开发账户登录成功" ;
-                    
+                    user.LoginMsg="开发账户登录成功" ;      //此处应该为动态检测 现在为静态
                 }
                 else
                 {

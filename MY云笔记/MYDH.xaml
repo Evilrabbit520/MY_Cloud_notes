@@ -50,8 +50,8 @@
         <Canvas Background="#FFE2F3FF" Grid.Row="1">
             <TextBox Height="23" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="10" Width="164"/>
         </Canvas>
-        <Frame x:Name="Fad" Grid.Column="1" Margin="45,440,362,25.5" Grid.Row="1"/>
-        <Frame x:Name="Fweather" Margin="45,49,362,322" Grid.Column="1" Grid.Row="1"/>
+        <!--<Frame x:Name="Fad" Grid.Column="1" Margin="45,440,362,25.5" Grid.Row="1"/>
+        <Frame x:Name="Fweather" Margin="45,49,362,322" Grid.Column="1" Grid.Row="1"/>-->
         <!--..............................................................................................................................................................................................................................................................................................-->
     </Grid>
 </Window>
