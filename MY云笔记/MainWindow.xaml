@@ -12,14 +12,14 @@
             <RowDefinition Height="49*"/>
         </Grid.RowDefinitions>
         <Label x:Name="label" Content="账号" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Width="42" Grid.Row="1" Background="White" Foreground="Black"/>
-        <Label x:Name="label1" Content="密码" HorizontalAlignment="Left" Margin="47,45,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Grid.Row="1" Width="42"/>
+        <Label x:Name="label1" Content="密码" HorizontalAlignment="Left" Margin="47,41,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Grid.Row="1" Width="42"/>
         <TextBox x:Name="txtLog" HorizontalAlignment="Left" Height="30" Margin="94,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Grid.Row="1" FontSize="20" ToolTip="数维/MY云笔记账号" />
-        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Margin="94,45,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Height="30" FontSize="20" ToolTip="密码"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Margin="94,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Height="30" FontSize="20" ToolTip="密码"/>
         <Image x:Name="登陆界面_jpg" Margin="0,0,0,147" Source="登陆界面.jpg" Stretch="Fill" Grid.RowSpan="2"/>
         <Button x:Name="Shutdown" Content="×" HorizontalAlignment="Left" Margin="425,0,0,0" VerticalAlignment="Top" Width="25" Height="25" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="button1_Click" IsTabStop="False" IsCancel="True" ToolTip="关闭"/>
-        <CheckBox x:Name="ChechBox_RememberMe" Content="记住密码" HorizontalAlignment="Left" Margin="94,80,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="checkBox_Checked"/>
-        <CheckBox x:Name="checkBox1" Content="自动登陆" HorizontalAlignment="Left" Margin="292,80,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.733,0.87" Checked="checkBox1_Checked"/>
-        <Button x:Name="Butlogin" Content="登        陆" Margin="94,100,90,15" Background="White" BorderBrush="White" Foreground="White" OpacityMask="White" FontSize="18" Click="button2_Click" ToolTip="登陆MY" IsDefault="True" Grid.Row="1" IsTabStop="False">
+        <CheckBox x:Name="ChechBox_RememberMe" Content="记住密码" HorizontalAlignment="Left" Margin="94,76,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+        <CheckBox x:Name="checkBox1" Content="自动登陆" HorizontalAlignment="Left" Margin="292,76,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.733,0.87" Checked="checkBox1_Checked"/>
+        <Button x:Name="Butlogin" Content="登        陆" Margin="94,96,90,19" Background="White" BorderBrush="White" Foreground="White" OpacityMask="White" FontSize="18" Click="button2_Click" ToolTip="登陆MY" IsDefault="True" Grid.Row="1" IsTabStop="False">
             <Button.Template >
                 <ControlTemplate TargetType="{x:Type Button}" >
                     <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="5,5,5,5">
