@@ -37,7 +37,7 @@ namespace DAL_MY云笔记
                 }
                 else
                 {
-                    user.LoginMsg= "请检查您的用户名或者密码";
+                    user.LoginMsg= "用户名或密码错误，请检查您的用户名或者密码";
                 }
             }
             return user;
