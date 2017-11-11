@@ -1,4 +1,4 @@
-﻿ using System;
+﻿ using System;      //测试
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -43,7 +43,7 @@ namespace MY云笔记
         {
             InitializeComponent();
             InitUserConfig();
-        }         
+        }
 
         private void InitUserConfig()
         {
@@ -56,7 +56,7 @@ namespace MY云笔记
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           App.Current.Shutdown();
+            App.Current.Shutdown();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -66,7 +66,7 @@ namespace MY云笔记
             //    SqlDataReader temDR = MyClass.getcom("select*from Digital Technology Users where Name="'+ texName.Text.Trim()+"');
 
             //}
-             UserInfo user = new UserInfo();
+            UserInfo user = new UserInfo();
             //取出用户界面的数据
             user.UserName = txtLog.Text;
             user.PassWord = txtPass.Password.Trim();
@@ -78,7 +78,8 @@ namespace MY云笔记
             try
             {
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
                 return;
             }
@@ -96,15 +97,15 @@ namespace MY云笔记
                 return;
             }
         }
-  
+
         private void checkBox_Checked(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         private void button1_Click_1(object sender, RoutedEventArgs e)
         {
-             Process.Start("http://www.idigitaltechnology.com/Home/Register");     //注册账号
+            Process.Start("http://www.idigitaltechnology.com/Home/Register");     //注册账号
         }
 
         private void button1_Copy_Click_1(object sender, RoutedEventArgs e)
@@ -114,7 +115,7 @@ namespace MY云笔记
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-             this.WindowState = System.Windows.WindowState.Minimized;    //最小化
+            this.WindowState = System.Windows.WindowState.Minimized;    //最小化
         }
 
         private void checkBox1_Checked(object sender, RoutedEventArgs e)
@@ -131,10 +132,14 @@ namespace MY云笔记
                     DragMove();
             }
         }
-        
+
+
+
     }
 
-    internal class Persist
-    {
-    }
+        internal class Persist
+        {
+
+        }
+    
 }
