@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <Label x:Name="label1" Content="密码" HorizontalAlignment="Left" Margin="47,41,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Grid.Row="1" Width="42"/>
 <!--账号Textbox开始-->
-        <TextBox x:Name="txtLog"  Foreground="Indigo" TabIndex="0" Margin="94,11,0,112" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Width="266" Grid.Column="0" Grid.Row="1" FontSize="18">
+        <TextBox x:Name="txtLog"  Foreground="Indigo" TabIndex="0" Margin="94,11,0,107" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Width="266" Grid.Column="0" Grid.Row="1" FontSize="18">
             <TextBox.Resources>
                 <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
                     <VisualBrush.Visual>
