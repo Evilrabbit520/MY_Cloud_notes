@@ -11,10 +11,30 @@
             <RowDefinition Height="50*"/>
             <RowDefinition Height="49*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="label" Content="账号" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Width="42" Grid.Row="1" Background="White" Foreground="Black"/>
         <Label x:Name="label1" Content="密码" HorizontalAlignment="Left" Margin="47,41,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Grid.Row="1" Width="42"/>
-        <TextBox x:Name="txtLog" HorizontalAlignment="Left" Height="30" Margin="94,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Grid.Row="1" FontSize="20" ToolTip="数维/MY云笔记账号" />
-        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Margin="94,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Height="30" FontSize="20" ToolTip="密码"/>
+<!--账号Textbox开始-->
+        <TextBox x:Name="txtLog"  Foreground="Indigo" TabIndex="0" Margin="94,11,0,112" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Width="266" Grid.Column="0" Grid.Row="1" FontSize="18">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Italic" Text="账号/手机/邮箱"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" BorderThickness="0,0,0,1" Margin="94,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="266" Height="30" FontSize="20" ToolTip="密码"/>
         <Image x:Name="登陆界面_jpg" Margin="0,0,0,147" Source="登陆界面.jpg" Stretch="Fill" Grid.RowSpan="2"/>
         <Button x:Name="Shutdown" Content="×" HorizontalAlignment="Left" Margin="425,0,0,0" VerticalAlignment="Top" Width="25" Height="25" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="button1_Click" IsTabStop="False" IsCancel="True" ToolTip="关闭"/>
         <CheckBox x:Name="ChechBox_RememberMe" Content="记住密码" HorizontalAlignment="Left" Margin="94,76,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="checkBox_Checked"/>
@@ -38,6 +58,5 @@
         <Button x:Name="button1" Content="账号注册" HorizontalAlignment="Left" Margin="365,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="58" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2298F9" Click="button1_Click_1"/>
         <Button x:Name="button1_Copy" Content="忘记密码" HorizontalAlignment="Left" Margin="365,45,0,0" Grid.Row="1" VerticalAlignment="Top" Width="58" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2298F9" Click="button1_Copy_Click_1"/>
         <Button x:Name="button" Content="-" HorizontalAlignment="Left" Margin="400,1,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="button_Click" ToolTip="最小化"/>
-        <Image x:Name="_134_triangledown_png" Margin="343,20,96,117" Grid.Row="1" Source="image\134_triangledown.png" Stretch="Fill"/>
     </Grid>
 </Window>
